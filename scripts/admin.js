@@ -2,7 +2,7 @@
 const BASE_URL="https://vivacious-short-battery.glitch.me/books"
 document.addEventListener("DOMContentLoaded",()=>{
     const loginData=JSON.parse(localStorage.getItem("loginData"));
-    
+
     if(!loginData || loginData.email !== adminEmail){
         alert("Admin not logged in");
         window.location.href="index.html";
@@ -41,17 +41,17 @@ const displayBooks = (books) => {
         const verifybtn= bookCard.querySelector(".verify-btn");
         const deletebtn= bookCard.querySelector(".delete-btn");
         bookGrid.appendChild(bookCard);
-    });
+    });};
     form.addEventListener("submit,async(event)=>{
         event.preventDefault();
         const newBook={
-            "title": "Book Title",
-            "author": "Author Name",
-            "category": "Fictional",
-            "isAvailable": true,
-            "isVerified": false,
-            "borrowedDays": null,
-            "imageUrl": "https://m.media-amazon.com/images/I/71ZB18P3inL._SY522_.jpg",
+            title: form.title.value,
+            author: form.author.value,
+            category: form.category.value,
+            isAvailable: true,
+            isVerified: false,
+            borrowedDays: null,
+            imageUrl: "https://m.media-amazon.com/images/I/71ZB18P3inL._SY522_.jpg",
             };
             try{
                 const response=await fetch(API_URL,{
