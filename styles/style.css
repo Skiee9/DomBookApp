@@ -1,0 +1,50 @@
+#nav{
+    display:flex;
+    background-color: rgb(51, 56, 99);
+
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+    height:30px;
+    margin:auto;
+    padding:5px;
+
+
+}
+body{
+    background-color: rgb(227, 227, 230);
+}
+h2{
+    text-align: center;
+}
+#nav a{
+    text-decoration: none;
+    color:white;
+}
+#login-form,#add-book-form{
+    display: flex;
+    margin:20px;
+    padding:40px;
+    border:2px solid black;
+    margin:auto;
+
+    justify-content: center;
+    flex-direction: column;
+
+}
+button{
+    background-color: rgb(47, 53, 111);
+    border: none;
+    color:aliceblue
+}
+#admin-container{
+    margin:auto;
+    padding:20px;
+    border-radius: 10px;
+}
+#book-grid{
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+
+}
