@@ -2,6 +2,7 @@
 const BASE_URL="https://vivacious-short-battery.glitch.me/books"
 document.addEventListener("DOMContentLoaded",()=>{
     const loginData=JSON.parse(localStorage.getItem("loginData"));
+    
     if(!loginData || loginData.email !== adminEmail){
         alert("Admin not logged in");
         window.location.href="index.html";

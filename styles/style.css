@@ -37,7 +37,7 @@ h2{
 button{
     background-color: rgb(47, 53, 111);
     border: none;
-
+padding:10px;
     color:aliceblue
 }
 #admin-container{
