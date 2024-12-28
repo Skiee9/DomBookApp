@@ -57,19 +57,21 @@ const displayBooks = (books) => {
                 const response=await fetch(API_URL,{
                     method: "POST",
                     headers:{"content-Type":"application/json"},
-                    body:JSON.stringify(newBook),}
+                    body:JSON.stringify(newBook),
+                }
 
         );
         if (response.ok{
-            alert("Book Returned Successfully.");
+            alert("Book addedd Successfully.");
             fetchBooks();
             form.reset();
         }
+    }
         catch(error){
-            console.error(error);
+            console.error(error);}
         });
     
-    };
+   
     const verifyBook=async(book)=>{
         if(confirm(" Are you sure to return book..?")){
             try{
